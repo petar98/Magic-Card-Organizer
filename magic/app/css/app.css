@@ -1,0 +1,43 @@
+/* app css stylesheet */
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+#logo img {
+  position: relative;
+  height: 80px;
+  width: 190px;
+  margin-right: 30px;
+}
+#navbar-main ul li a {
+  margin-top: 14px;
+  margin-right: 30px;
+  font-size: 130%;
+}
+#navbar-main ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  border-radius: 0 0 12px 12px;
+  background-color: #101010;
+}
+.glyphicon {
+  margin-right: 15px;
+}
+.navbar-header button {
+  top: 13px;
+}
+.wrapper   {
+  margin-top: 120px;
+  background: url("magic-container-background.jpg");
+  background-size: 100% 100%;
+}
+.jumbotron {
+  padding: 80px;
+  padding-bottom: 230px;
+}
+.form1 {
+  margin-top: 50px;
+}
