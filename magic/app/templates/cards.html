@@ -1,0 +1,14 @@
+<div class="jumbotron text-center">
+    <div class="form-group">
+        <input class="form-control" placeholder="Search" type="text" ng-model="search">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="fetchCardData.getData(search)">Search</button>
+    <div class="cards">
+        <ul class="list">
+            <li class="list-group-item" ng-repeat="card in cards">
+                <h5>{{ cards.name }}</h5>
+                <img ng-src="{{ cards.imageUrl }}" />
+            </li>
+        </ul>
+    </div>
+</div>
