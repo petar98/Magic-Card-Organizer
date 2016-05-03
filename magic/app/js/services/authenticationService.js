@@ -41,6 +41,6 @@ app.factory('authenticationService',['$q','$http','$kinvey',function ($q,$http,$
                 return true;
             }
             return false;
-        },
+        }
     }
 }]);

@@ -8,7 +8,7 @@ app.factory('fetchCardData', function ($http, search) {
                     successcb(data);
                 })
                 .error(function (data, status, headers, config) {
-
+                    
                 });
         }
     }

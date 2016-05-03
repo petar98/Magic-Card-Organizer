@@ -2,7 +2,7 @@
     <div class="form-group">
         <input class="form-control" placeholder="Search" type="text" ng-model="search">
     </div>
-    <button type="submit" class="btn btn-default" ng-click="fetchCardData.getData(search)">Search</button>
+    <button type="submit" class="btn btn-default" ng-click="getData(search)">Search</button>
     <div class="cards">
         <ul class="list">
             <li class="list-group-item" ng-repeat="card in cards">

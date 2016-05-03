@@ -1,15 +1,12 @@
 'use strict';
 
-app.controller('RegisterController',['$scope','authenticationService','$location',function ($scope,authenticationService, $location) {
+app.controller('RegisterController', ['$scope', 'authenticationService', '$location', function ($scope, authenticationService, $location) {
     $scope.user = {};
-    $scope.register = function ($scope.user.passwordRepeat, $scope.user.password) {
-        if($scope.user.passwordRepeat != $scope.user.password) {
-            alert("Please enter the same password Twice");
-        }
+    $scope.register = function () {
         authenticationService.register($scope.user.username, $scope.user.password).then(function () {
             alert("registered!");
-            $location.path('/caards');
-        },function (err) {
+            $location.path('#/cards');
+        }, function (err) {
             console.log(err);
         });
     }

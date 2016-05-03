@@ -2,12 +2,12 @@
 var initialized = false;
 var app = angular.module('app', ['ngRoute', 'kinvey']);
     app.config(function ($routeProvider) {
+        $routeProvider.when('/home', {
+            templateUrl: 'templates/home.html'
+        });
         $routeProvider.when('/login', {
             templateUrl: 'templates/login.html',
             controller: 'LoginController'
-        });
-        $routeProvider.when('/home', {
-            templateUrl: 'templates/home.html'
         });
         $routeProvider.when('/register', {
             templateUrl: 'templates/register.html',
