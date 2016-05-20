@@ -2,7 +2,7 @@ app.controller('LoginController', ['$kinvey', '$scope', 'authenticationService',
     if (authenticationService.isLogged() === false) {
         $scope.login = function () {
             authenticationService.login($scope.user.username, $scope.user.password).then(function () {
-                alert("You are logged in!");
+                alert("You are successfully logged in!");
                 $location.path("#/cards");
             }, function (err) {
                 console.log(err);

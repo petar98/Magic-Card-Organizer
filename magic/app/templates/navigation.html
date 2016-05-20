@@ -16,17 +16,15 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li ng-hide="hideRegLog">
                         <a href="#/login"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a>
                     </li>
-                    <li>
+                    <li ng-hide="hideRegLog">
                         <a href="#/register"><span class="glyphicon glyphicon-paperclip"></span>REGISTER</a>
                     </li>
-                    <div ng-if="authenticationService.isLogged()">
-                        Hello, {{ user.username }}
-                    </div>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+<div show-profile></div>

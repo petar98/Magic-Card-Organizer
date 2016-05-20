@@ -58,3 +58,9 @@ body {
   margin-top: 20px;
   border-radius: 10px 10px 0px 0px;
 }
+#footer .links a {
+  color: #ff6a0f;
+}
+#footer .socials p:hover {
+  color: #007bb6;
+}
