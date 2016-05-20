@@ -1,0 +1,32 @@
+<div class="navbar navbar-default navbar-fixed-top container">
+    <div class="container">
+        <div class="navbar-header">
+            <a id="logo" href="#/home"><img src="img/magic-the-gathering-logo.png"/></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <div class="cl-effect-1" id="cl-effect-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/cards">CARDS</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#/login"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="#/register"><span class="glyphicon glyphicon-paperclip"></span>REGISTER</a>
+                    </li>
+                    <div ng-if="authenticationService.isLogged()">
+                        Hello, {{ user.username }}
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

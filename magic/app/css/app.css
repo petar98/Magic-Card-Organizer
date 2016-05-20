@@ -52,3 +52,9 @@ body {
   background-color: #101010;
   border-radius: 12px 12px 0 0;
 }
+#footer .container {
+  background-color: rgb(29, 29, 29);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px 10px 0px 0px;
+}

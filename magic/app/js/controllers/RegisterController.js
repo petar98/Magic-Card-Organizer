@@ -11,3 +11,4 @@ app.controller('RegisterController', ['$scope', 'authenticationService', '$locat
         });
     }
 }]);
+
