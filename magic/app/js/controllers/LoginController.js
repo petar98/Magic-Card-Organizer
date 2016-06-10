@@ -5,6 +5,7 @@ app.controller('LoginController', ['$kinvey', '$scope', 'authenticationService',
                 alert("You are successfully logged in!");
                 $location.path("#/cards");
             }, function (err) {
+                $scope.error = true;
                 console.log(err);
             });
         };
@@ -13,5 +14,5 @@ app.controller('LoginController', ['$kinvey', '$scope', 'authenticationService',
         $location.path("#/home");
         alert("You are already logged in!");
         $scope.hideLogin = true;
-    };
+    }
 }]);
